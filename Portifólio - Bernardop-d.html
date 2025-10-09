@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <title>Portfólio - bernardop-d </title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container nav-wrapper">
+        <h1 class="logo">Bernardo</h1>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="navbar">
+          <a href="#sobre">Sobre</a>
+          <a href="#skills">Skills</a>
+          <a href="#projetos">Projetos</a>
+          <a href="https://github.com/bernardop-d">GitHub</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-img">
+          <img
+            src="assets/imgs/foto-perfil.png"
+            alt="Foto de perfil"
+            class="profile-img"
+          />
+        </div>
+        <div class="hero-text">
+          <h2><span class="typed-text" id="typed"></span></h2>
+          <p>
+            Sou Bernardo, desenvolvedor full-stack especializado em back-end. 
+			Crio soluções eficientes e otimizadas, sempre com foco na acessibilidade e na experiência do usuário.
+          </p>
+          <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container about-text">
+        <h2 class="section-title">Sobre mim</h2>
+        <p class="section-text">
+          Sou desenvolvedor full-stack com foco em back-end. Tenho
+          experiência com criação soluções. Atuo com Python, Java, Sql, HTML5, Css,
+          JavaScript, Git , GitHub, construindo soluções que equilibram funcionalidade e usabilidade.
+        </p>
+        <p class="section-text">
+          Atualmente, atuo como Jovem Aprendiz/auxiliar técnico atuando como suporte na Empresa de Navegação Elcano S.A..
+          Além disso, continuo me dedicando aos meus estudos e ao desenvolvimento de projetos paralelos, 
+          sempre buscando aprimorar meus conhecimentos e compartilhar o que aprendo de maneira clara e prática.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="devicon-python-plain colored"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-java-plain colored"></i>
+            <span>Java</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-mysql-plain colored"></i>
+            <span>SQL</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-html5-plain colored"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-css3-plain colored"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-git-plain colored"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-github-original colored"></i>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projetos-grid">
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/card-project-1.png"
+              alt="Print do projeto 1"
+            />
+            <h3>Sistema de Gerenciamento de Tarefas (Python + SQLite)</h3>
+            <p>
+              Projeto em Python que permite gerenciar tarefas com controle de usuários e níveis de acesso.
+Usuários comuns podem criar e acompanhar suas tarefas, enquanto administradores têm acesso total — podendo visualizar, editar e criar tarefas para qualquer usuário.
+O sistema funciona via linha de comando (CLI) e utiliza SQLite para persistência de dados.
+
+Principais recursos:
+
+Login com níveis de permissão (usuário e admin)
+
+CRUD completo de tarefas
+
+Registro de ações (logs)
+
+Banco de dados SQLite integrado
+
+Código modular e simples, com foco em clareza e aprendizado
+            </p>
+            <div class="btns">
+              <a href="#">Ver projeto</a>
+              <a href="#">Ver código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/card-project-2.png"
+              alt="Print do projeto 2"
+            />
+            <h3>Título</h3>
+            <p>
+              Objetivo/do que se trata
+            </p>
+            <div class="btns">
+              <a href="#">Ver projeto</a>
+              <a href="#">Ver código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img
+              src="assets/imgs/card-project-3.png"
+              alt="Print do projeto 3"
+            />
+            <h3>Hércules Festas (aluguel de material pra festa) </h3>
+            <p>
+              Sistema back-end desenvolvido com o objetivo exclusivo de otimizar a criação de pedidos, 
+    acelerando o processo e eliminando etapas manuais, como o registro escrito. 
+    O sistema armazena automaticamente o nome do cliente, endereço, informações de contato e os itens solicitados, 
+    gerando uma nota com todos esses dados. Com isso, houve uma melhoria de cerca de 70% na eficiência do processo.
+            </p>
+            <div class="btns">
+              <a href="https://github.com/bernardop-d/Hercules_festas">Ver projeto</a>
+              <a href="https://github.com/bernardop-d/Hercules_festas/blob/master/Hercules_festas.py">Ver código</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container contato-card">
+        <h2>Contato</h2>
+        <p>Me chama no LinkedIn ou manda um e-mail 😊</p>
+        <div class="social-links">
+          <a href="https://github.com/bernardop-d" class="btn-social" target="_blank" rel="noopener noreferrer">
+            <i class="devicon-github-original"></i> GitHub
+          </a>
+
+          <a href="https://www.linkedin.com/in/bernardop.d/" class="btn-social" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+
+          <a href="mailto:contato.bernardopd@gmail.com" class="btn-social">
+            <i class="fas fa-envelope"></i> E-mail
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
