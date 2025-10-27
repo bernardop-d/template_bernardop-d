@@ -6,8 +6,8 @@
 
 body {
   font-family: "Sora", sans-serif;
-  background-color: #fefefe;
-  color: #222;
+  background-color: #ffffff;
+  color: #111111;
   line-height: 1.6;
 }
 
@@ -17,11 +17,10 @@ body {
   padding: 1rem;
 }
 
-/* Header fixo com logo e navegação */
 header {
-  background-color: #111;
+  background-color: #111111;
   padding: 0.82rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -37,21 +36,20 @@ header {
 .logo {
   font-size: 1.75rem;
   font-weight: 800;
-  color: #fff;
+  color: #ffffff;
 }
 
 .logo .realce {
-  color: #ff00c8;
+  color: #cccccc;
 }
 
-/* Navegação padrão (desktop) */
 .navbar {
   display: flex;
   gap: 1.5rem;
 }
 
 .navbar a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
   position: relative;
@@ -65,7 +63,7 @@ header {
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #ff00c8;
+  background-color: #cccccc;
   transition: width 0.3s ease;
 }
 
@@ -74,23 +72,20 @@ header {
 }
 
 .navbar a:hover {
-  color: #ff00c8;
+  color: #cccccc;
 }
 
-/* Ícone do menu mobile */
 .menu-icon {
   display: none;
   font-size: 1.8rem;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }
 
-/* Esconde checkbox padrão */
 #menu-toggle {
   display: none;
 }
 
-/* Navegação responsiva (mobile) */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -100,9 +95,9 @@ header {
     display: none;
     width: 100%;
     flex-direction: column;
-    background-color: #111;
+    background-color: #111111;
     margin-top: 1rem;
-    border-top: 1px solid #333;
+    border-top: 1px solid #333333;
     padding-top: 1rem;
   }
 
@@ -112,15 +107,14 @@ header {
 
   .navbar a {
     padding: 0.5rem 1rem;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #222222;
   }
 }
 
-/* Hero - destaque inicial com imagem e texto */
 .hero {
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #f1f1f1 0%, #eaeaea 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
   padding: 5rem 2rem;
   height: 80vh;
 }
@@ -143,8 +137,8 @@ header {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 5px solid #ff00c8;
-  box-shadow: 0 0 25px #ff00c888;
+  border: 5px solid #111111;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   object-fit: cover;
 }
 
@@ -157,7 +151,7 @@ header {
   font-family: "Bitcount", system-ui;
   font-weight: 500;
   font-size: 3rem;
-  color: #ff00c8;
+  color: #111111;
 }
 
 .hero-text h2,
@@ -169,22 +163,22 @@ header {
   margin: 1rem 0 2rem;
 }
 
-/* Botão principal reutilizável */
 .btn-primary {
-  background-color: #111;
-  color: #fff;
+  background-color: #111111;
+  color: #ffffff;
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #ff00c8;
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #111111;
 }
 
-/* Hero responsivo */
 @media (max-width: 768px) {
   .hero-grid {
     flex-direction: column;
@@ -201,7 +195,6 @@ header {
   }
 }
 
-/* Seções gerais */
 .section {
   padding: 3rem 2rem;
 }
@@ -212,7 +205,7 @@ header {
 
 .section-subtitle {
   font-size: 1.1rem;
-  color: #444;
+  color: #555555;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -220,11 +213,10 @@ header {
 .section-text {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #333;
+  color: #333333;
   margin-bottom: 1.2rem;
 }
 
-/* Grid de skills (cards) */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -243,26 +235,28 @@ header {
   border-radius: 8px;
   width: 6rem;
   height: 6rem;
-  background-color: #f8f8f8;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #eeeeee;
 }
 
 .skill-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .skill-card i {
   font-size: 40px;
+  color: #111111;
 }
 
 .skill-card span {
   font-weight: 600;
   font-size: 0.95rem;
-  color: #333;
+  color: #333333;
 }
 
-/* Tags de skills alternativa (não usada por padrão) */
 .skills-list-icons {
   display: flex;
   flex-wrap: wrap;
@@ -271,8 +265,8 @@ header {
 }
 
 .skill-tag {
-  background-color: #111;
-  color: #fff;
+  background-color: #333333;
+  color: #ffffff;
   padding: 0.6rem 1rem;
   border-radius: 8px;
   display: flex;
@@ -284,21 +278,19 @@ header {
 
 .skill-tag i {
   font-size: 1.1rem;
+  color: #ffffff;
 }
 
-/* Botão base genérico */
 .btn {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #222;
+  background-color: #111111;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
-  text-decoration: none;
   font-weight: bold;
 }
 
-/* Seção de projetos */
 .projetos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -307,10 +299,10 @@ header {
 }
 
 .projeto-card {
-  border: 1px solid #ddd;
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
 }
@@ -328,12 +320,13 @@ header {
 .projeto-card h3 {
   margin: 1rem;
   font-size: 1.25rem;
+  color: #111111;
 }
 
 .projeto-card p {
   margin: 0 1rem 1rem;
   font-size: 0.95rem;
-  color: #444;
+  color: #555555;
 }
 
 .projeto-card .btns {
@@ -344,23 +337,25 @@ header {
 }
 
 .projeto-card .btns a {
-  background-color: #222;
+  background-color: #111111;
   color: #fff;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   font-weight: bold;
   font-size: 0.9rem;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .projeto-card .btns a:hover {
-  background-color: #ff00c8;
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #111111;
 }
 
-/* Card de contato com links sociais */
 .contato-card {
-  background: linear-gradient(135deg, #fdfdfd, #f3f3f3);
-  border: 2px solid #eee;
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border: 2px solid #e0e0e0;
   border-radius: 12px;
   padding: 3rem 2rem;
   text-align: center;
@@ -372,17 +367,18 @@ header {
 .contato-card h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: #111111;
 }
 
 .contato-card p {
   font-size: 1.1rem;
-  color: #444;
+  color: #555555;
   margin-bottom: 2rem;
 }
 
 .btn-social {
-  background-color: #111;
-  color: #fff;
+  background-color: #111111;
+  color: #ffffff;
   padding: 0.75rem 1.25rem;
   border-radius: 6px;
   text-decoration: none;
@@ -391,12 +387,13 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn-social:hover {
-  background-color: #ff00c8;
-  color: #fff;
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #111111;
 }
 
 .social-links {
@@ -410,17 +407,16 @@ header {
   font-size: 1.1rem;
 }
 
-/* Footer com créditos */
 footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  color: #666;
-  background-color: #111;
+  color: #888888;
+  background-color: #111111;
 }
 
 footer a {
-  color: #f9f9f9;
+  color: #cccccc;
   text-decoration: none;
   font-weight: 500;
 }
