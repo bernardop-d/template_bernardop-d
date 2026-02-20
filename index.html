@@ -50,8 +50,8 @@
         <div class="hero-text">
           <h2><span class="typed-text" id="typed"></span></h2>
           <p>
-            Sou Bernardo, desenvolvedor full-stack especializado em back-end. 
-            Crio soluções eficientes e otimizadas, sempre com foco na acessibilidade e na experiência do usuário.
+            Sou Bernardo, desenvolvedor Back-End especializado em soluções eficientes com Python, Java e SQL. 
+            Focado em automação, integridade de sistemas e Clean Code.
           </p>
           <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
         </div>
@@ -62,16 +62,14 @@
       <div class="container about-text">
         <h2 class="section-title">Sobre mim</h2>
         <p class="section-text">
-          Sou desenvolvedor full-stack com foco em back-end. Tenho
-          experiência com criação soluções. Atuo com Python, Java, Sql, HTML5, Css,
-          JavaScript, Git , GitHub, construindo soluções que equilibram funcionalidade e usabilidade.
+          [cite_start]Sou desenvolvedor com foco em <strong>Back-End</strong>, atualmente cursando Análise e Desenvolvimento de Sistemas[cite: 57]. 
+          [cite_start]Minha trajetória combina atuação corporativa na <strong>Empresa de Navegação Elcano S.A.</strong>, onde trabalho com manipulação de bancos de dados SQL e automação[cite: 60, 62, 63], 
+          [cite_start]com o desenvolvimento de sistemas robustos em Python e Java[cite: 46].
         </p>
         <p class="section-text">
-          Atualmente, atuo como Jovem Aprendiz / Auxiliar Técnico na Empresa de Navegação Elcano S.A.,
-          prestando suporte técnico e operacional às rotinas da equipe. 
-          Paralelamente, sigo investindo no meu desenvolvimento profissional, por meio de projetos práticos e estudos contínuos em tecnologia,
-          com foco em backend e boas práticas de desenvolvimento de software. Busco constantemente aprimorar minhas habilidades,
-          otimizar processos e compartilhar conhecimento de forma colaborativa e estratégica.
+          Especializado na criação de <strong>APIs RESTful</strong> e automação de processos, busco sempre aplicar princípios de Clean Code, 
+          [cite_start]arquitetura MVC e boas práticas de engenharia de software[cite: 48]. Tenho facilidade em transformar necessidades de negócio em soluções técnicas eficientes, 
+          [cite_start]focando na integridade dos dados e na escalabilidade do código[cite: 47, 48].
         </p>
       </div>
     </section>
@@ -85,6 +83,10 @@
             <span>Python</span>
           </div>
           <div class="skill-card">
+            <i class="devicon-fastapi-plain colored"></i>
+            <span>FastAPI</span>
+          </div>
+          <div class="skill-card">
             <i class="devicon-java-plain colored"></i>
             <span>Java</span>
           </div>
@@ -93,16 +95,8 @@
             <span>SQL</span>
           </div>
           <div class="skill-card">
-            <i class="devicon-html5-plain colored"></i>
-            <span>HTML5</span>
-          </div>
-          <div class="skill-card">
-            <i class="devicon-css3-plain colored"></i>
-            <span>CSS3</span>
-          </div>
-          <div class="skill-card">
-            <i class="devicon-javascript-plain colored"></i>
-            <span>JavaScript</span>
+            <i class="fas fa-vial colored"></i>
+            <span>Postman</span>
           </div>
           <div class="skill-card">
             <i class="devicon-git-plain colored"></i>
@@ -112,6 +106,18 @@
             <i class="devicon-github-original colored"></i>
             <span>GitHub</span>
           </div>
+          <div class="skill-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-html5-plain colored"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-css3-plain colored"></i>
+            <span>CSS3</span>
+          </div>
         </div>
       </div>
     </section>
@@ -120,23 +126,71 @@
       <div class="container">
         <h2>Projetos</h2>
         <div class="projetos-grid">
+          
           <div class="projeto-card">
-            <img
-              src="imagens/pythonsqlcmd.png"
-              alt="Print do projeto 1"
-            />
-            <h3>Sistema de Gerenciamento de Tarefas (Python + SQLite)</h3>
+            <img src="imagens/bot-vagas.png" alt="Bot de Automação de Vagas" />
+            <h3>Bot de Automação de Vagas (Python & FastAPI)</h3>
             <p>
-              Projeto em Python que permite gerenciar tarefas com controle de usuários e níveis de acesso.
-              Usuários comuns podem criar e acompanhar suas tarefas, enquanto administradores têm acesso total — podendo visualizar, editar e criar tarefas para qualquer usuário.
-              O sistema funciona via linha de comando (CLI) e utiliza SQLite para persistência de dados.
+              [cite_start]API REST desenvolvida para varredura automática em múltiplos portais de vagas[cite: 74]. 
+              [cite_start]Utiliza <strong>Selenium</strong> para scraping, arquitetura modular e persistência em MySQL via <strong>SQLAlchemy</strong>[cite: 74].
               <br /><br />
-              <strong>Principais recursos:</strong><br />
-              - Login com níveis de permissão (usuário e admin)<br />
-              - CRUD completo de tarefas<br />
-              - Registro de ações (logs)<br />
-              - Banco de dados SQLite integrado<br />
-              - Código modular e simples, com foco em clareza e aprendizado
+              [cite_start]<strong>Destaques:</strong> Automação de coleta de dados, integração de banco de dados relacional e arquitetura escalável[cite: 74].
+            </p>
+            <div class="btns">
+              <a href="https://github.com/bernardop-d/linkedin-job-scraper">Ver projeto</a>
+              <a href="https://github.com/bernardop-d/linkedin-job-scraper/blob/main/main.py">Ver código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img src="imagens/imgs/card-project-placeholder.png" alt="Sistema de Gestão de Loja" />
+            <h3>Sistema de Gestão de Loja (Java & MySQL)</h3>
+            <p>
+              [cite_start]Aplicação Desktop para controle de estoque e vendas[cite: 75]. 
+              [cite_start]Implementação de arquitetura <strong>MVC</strong>, operações CRUD completas e conexão via <strong>JDBC</strong> com banco de dados MySQL[cite: 75].
+              <br /><br />
+              [cite_start]<strong>Destaques:</strong> Organização de código profissional, manipulação de dados persistentes e interface funcional[cite: 75].
+            </p>
+            <div class="btns">
+              <a href="https://github.com/bernardop-d">Ver projeto</a>
+              <a href="https://github.com/bernardop-d">Ver código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img src="imagens/herculesfestas.v2.png" alt="Hércules Festas V2" />
+            <h3>Hércules Festas V2 (Full-Stack Python)</h3>
+            <p>
+              [cite_start]Evolução de sistema freelancer para gestão de eventos[cite: 68, 69]. 
+              [cite_start]Back-end construído em <strong>Python Puro</strong> focado na lógica de negócios manual e integração com SQLite[cite: 70, 71].
+              <br /><br />
+              [cite_start]<strong>Destaques:</strong> Melhoria de 70% na eficiência de processos e modelagem de banco de dados relacional[cite: 71, 72].
+            </p>
+            <div class="btns">
+              <a href="https://github.com/bernardop-d/Hercules-festas.v2">Ver projeto</a>
+              <a href="https://github.com/bernardop-d/Hercules-festas.v2/blob/main/backend/main.py">Ver código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img src="imagens/imgs/card-project-placeholder.png" alt="E-commerce Python" />
+            <h3>Sistema de E-commerce (Python & SQLite)</h3>
+            <p>
+              [cite_start]Plataforma de vendas integrada ao banco de dados SQLite[cite: 76]. 
+              [cite_start]Inclui lógica complexa de carrinho de compras e gestão completa de cadastro de produtos[cite: 76].
+            </p>
+            <div class="btns">
+              <a href="https://github.com/bernardop-d">Ver projeto</a>
+              <a href="https://github.com/bernardop-d">Ver código</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <img src="imagens/pythonsqlcmd.png" alt="Gerenciador de Tarefas" />
+            <h3>Gerenciador de Tarefas (CLI + SQLite)</h3>
+            <p>
+              Sistema via linha de comando com controle de usuários e níveis de acesso (Admin/User). 
+              Foco em CRUD e logs de sistema.
             </p>
             <div class="btns">
               <a href="https://github.com/bernardop-d/GerenciadorTarefasPythonSQLite">Ver projeto</a>
@@ -145,92 +199,18 @@
           </div>
 
           <div class="projeto-card">
-            <img
-              src="imagens/herculesfestas.v2.png"
-              alt="Print do projeto 2"
-            />
-            <h3>Hércules Festas.V2 (aluguel de material pra festa)</h3>
+            <img src="imagens/calc.jpg" alt="Calculadora Java" />
+            <h3>Calculadora Profissional (Java)</h3>
             <p>
-              O Hércules_Festas.v2 é a evolução de um projeto freelancer desenvolvido para otimizar o controle de aluguel de materiais para festas. 
-              Criado em resposta à necessidade do cliente por um sistema mais intuitivo e de fácil compreensão, o projeto demonstrou um grande foco em dedicação, aprendizado e melhoria contínua, resultando em uma arquitetura aprimorada para o gerenciamento de dados.
-              <br /><br />
-              <strong>Principais recursos:</strong><br />
-              - Gestão de Aluguéis: Cadastro e listagem rápida de todos os registros de aluguel.<br />
-              - Controle de Registros: Funcionalidade para exclusão de aluguéis e materiais.<br />
-              - Armazenamento Robusto: Utilização de SQLite para persistência e segurança dos dados.<br />
-              - Interface Otimizada: Front-end simples e intuitivo, focado em facilitar a visualização e a usabilidade pelo cliente.<br />
-              - Cálculo Automático: Determinação automática e precisa dos valores totais.<br />
-            </p>
-            <div class="btns">
-              <a href="https://github.com/bernardop-d/Hercules-festas.v2/tree/main/backend">Ver projeto</a>
-              <a href="https://github.com/bernardop-d/Hercules-festas.v2/blob/main/backend/main.py">Ver código</a>
-            </div>
-          </div>
-
-          <div class="projeto-card">
-            <img
-              src="img"
-              alt="Print do projeto 3"
-            />
-            <h3>titulo</h3>
-            <p>
-              Descrição breve do seu projeto. Fale sobre o objetivo, as tecnologias utilizadas e o que você aprendeu.
-            </p>
-            <div class="btns">
-              <a href="">Ver projeto</a>
-              <a href="">Ver código</a>
-            </div>
-          </div>
-
-          <div class="projeto-card">
-            <img
-              src="imagens/imgs/card-project-placeholder.png"
-              alt="Print do projeto 4"
-            />
-            <h3>Título do Projeto 4</h3>
-            <p>
-              Descrição breve do seu projeto. Fale sobre o objetivo, as tecnologias utilizadas e o que você aprendeu.
-            </p>
-            <div class="btns">
-              <a href="#">Ver projeto</a>
-              <a href="#">Ver código</a>
-            </div>
-          </div>
-
-          <div class="projeto-card">
-            <img
-              src="imagens/herculesfestas.jpg"
-              alt="Print do projeto 5"
-            />
-            <h3>Hércules Festas (aluguel de material pra festa)</h3>
-            <p>
-              Sistema back-end desenvolvido com o objetivo exclusivo de otimizar a criação de pedidos, 
-              acelerando o processo e eliminando etapas manuais, como o registro escrito. 
-              O sistema armazena automaticamente o nome do cliente, endereço, informações de contato e os itens solicitados, 
-              gerando uma nota com todos esses dados. Com isso, houve uma melhoria de cerca de 70% na eficiência do processo.
-            </p>
-            <div class="btns">
-              <a href="https://github.com/bernardop-d/Hercules_festas">Ver projeto</a>
-              <a href="https://github.com/bernardop-d/Hercules_festas/blob/master/Hercules_festas.py">Ver código</a>
-            </div>
-          </div>
-
-          <div class="projeto-card">
-            <img
-              src="imagens/calc.jpg"
-              alt="Print do projeto 6"
-            />
-            <h3>Calculadora.java</h3>
-            <p>
-              Este projeto foi criado por mim para treinar programação em Java. Trata-se de uma calculadora de console que realiza as quatro operações básicas: adição, subtração, multiplicação e divisão.
-              O programa exibe um painel em texto mostrando os números e a operação escolhida, formata os resultados com duas casas decimais e inclui validações, como prevenção de divisão por zero. É possível encerrar a calculadora a qualquer momento digitando “X”.
-              Com este projeto, pratiquei lógica de programação, estruturas de repetição, condicionais e organização de código, além de aprender a criar uma aplicação funcional e de fácil uso no console.
+              Projeto para consolidação de lógica de programação em Java. 
+              Foco em tratamento de exceções, formatação de dados e estruturas condicionais.
             </p>
             <div class="btns">
               <a href="https://github.com/bernardop-d/Calculadora_java">Ver projeto</a>
               <a href="https://github.com/bernardop-d/Calculadora_java/blob/main/Calculadora.java">Ver código</a>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -238,7 +218,7 @@
     <section id="contato" class="section">
       <div class="container contato-card">
         <h2>Contato</h2>
-        <p>Me chama no LinkedIn ou manda um e-mail 😊</p>
+        <p>Vamos conversar sobre tecnologia? 😊</p>
         <div class="social-links">
           <a href="https://github.com/bernardop-d" class="btn-social" target="_blank" rel="noopener noreferrer">
             <i class="devicon-github-original"></i> GitHub
@@ -251,8 +231,7 @@
           <a href="mailto:contato.bernardopd@gmail.com" class="btn-social">
             <i class="fas fa-envelope"></i> E-mail
           </a>
-
-          </div>
+        </div>
       </div>
     </section>
 
